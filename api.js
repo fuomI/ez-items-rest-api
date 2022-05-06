@@ -1,4 +1,4 @@
-// Require dotenv
+// Configuration to allow the use of .env file
 require('dotenv').config();
 
 // Load modules
@@ -20,6 +20,25 @@ db.once('open', () => console.log('Connected to database'));
 
 // Set server to accept json
 app.use(express.json());
+
+// Create a Schema for items
+const itemSchema = new mongoose.Schema({
+    name: {
+        type: String,
+        required: true
+    },
+    price: {
+        type: Number,
+        required: false
+    },
+    picture: {
+        type: String,
+        required: false
+    }
+});
+
+// Create model using the schema
+mongoose.model('item', itemSchema);
 
 // Routes
 
