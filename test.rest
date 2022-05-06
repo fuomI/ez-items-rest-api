@@ -1,1 +1,31 @@
+### Get all
+
 GET http://localhost:3000/api/getall
+
+### Add new item
+
+POST http://localhost:3000/api/add
+Content-Type: application/json
+
+{
+    "name": "Oltermanni 500g",
+    "price": 4.50,
+    "picture": "https://public.keskofiles.com/f/k-ruoka/product/6408430033805?w=480&h=480&fit=max&auto=format&fm=jpg&cs=srgb"
+}
+
+### Get item using id
+GET http://localhost:3000/api/6274ffb8cddc3cff64b0dab6
+
+### Delete item using id
+
+DELETE http://localhost:3000/api/delete/6274fda3065f0e2e66e55af2
+
+### Update one or many fields of an item using id (PATCH)
+
+PATCH http://localhost:3000/api/update/6274fd84065f0e2e66e55af0
+Content-Type: application/json
+
+{
+    "name": "Naudan jauheliha 400g",
+    "price": 4.20
+}
