@@ -2,7 +2,7 @@
   "name": "ez-items-rest-api",
   "version": "1.0.0",
   "description": "REST API created with Node.js, Express &amp; MongoDB",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,7 +18,8 @@
   "homepage": "https://github.com/fuomI/ez-items-rest-api#readme",
   "dependencies": {
     "express": "^4.18.1",
-    "mongoose": "^6.3.2"
+    "mongoose": "^6.3.2",
+    "router": "^1.3.7"
   },
   "devDependencies": {
     "dotenv": "^16.0.0",
