@@ -50,6 +50,7 @@ app.get('/api/getall', async (req, res) => {
         const items = await Item.find();
         res.send(items);
     } catch (err){
+        // Error on server side
         res.status(500).json( { message: err.message});
     }
 });
