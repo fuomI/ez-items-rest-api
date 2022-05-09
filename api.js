@@ -9,7 +9,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 // Connect to database
-mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true});
+mongoose.connect(process.env.DATABASE_URI, { useNewUrlParser: true});
 const db = mongoose.connection;
 
 // Check for errors
@@ -138,4 +138,4 @@ async function getItem (req, res, next) {
 };
 
 // ** Start server **
-app.listen(3000, () => console.log('Server running'));
+app.listen(3001, () => console.log('Server running'));
