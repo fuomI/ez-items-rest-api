@@ -4,9 +4,13 @@ require('dotenv').config();
 // Load modules
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 // App uses express
 const app = express();
+
+// Handle cors
+app.use(cors());
 
 // Connect to database
 mongoose.connect(process.env.DATABASE_URI, { useNewUrlParser: true});
