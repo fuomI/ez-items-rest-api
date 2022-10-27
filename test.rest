@@ -1,0 +1,31 @@
+GET http://localhost:3001/api/getall HTTP/1.1
+
+###
+
+GET http://localhost:3001/api/:id HTTP/1.1
+
+###
+
+POST http://localhost:3001/api/add HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Limu",
+    "price": 12.50,
+    "picture": "https://www.kahvi.com/Limu.jpg"
+}
+
+###
+
+DELETE http://localhost:3001/api/delete/:id HTTP/1.1
+
+###
+
+PATCH http://localhost:3001/api/update/635a427d6a493159ae9d2711 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Kahvi",
+    "price": 11.11,
+    "picture": "https://www.kahvi.com/kahvi.jpg"
+}
