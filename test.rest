@@ -29,7 +29,3 @@ content-type: application/json
     "price": 11.11,
     "picture": "https://www.kahvi.com/kahvi.jpg"
 }
-
-###
-
-LOL
